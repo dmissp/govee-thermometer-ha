@@ -1,0 +1,20 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Govee API Key",
+        "description": "Enter your Govee Developer API key. Request one at [developer.govee.com]({api_docs}).",
+        "data": {
+          "api_key": "API Key"
+        }
+      }
+    },
+    "error": {
+      "invalid_api_key": "Invalid or expired Govee API key.",
+      "cannot_connect": "Could not reach the Govee API. Check your network."
+    },
+    "abort": {
+      "already_configured": "This Govee account is already configured."
+    }
+  }
+}
