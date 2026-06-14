@@ -1,12 +1,13 @@
 {
   "domain": "govee_thermometer",
   "name": "Govee Thermometer / Hygrometer",
-  "version": "1.0.0",
+  "codeowners": [
+    "@Conexo-Casa"
+  ],
   "config_flow": true,
   "documentation": "https://github.com/Conexo-Casa/govee-thermometer-ha",
-  "issue_tracker": "https://github.com/Conexo-Casa/govee-thermometer-ha/issues",
-  "codeowners": ["@Conexo-Casa"],
-  "requirements": [],
   "iot_class": "cloud_polling",
-  "homeassistant": "2024.1.0"
+  "issue_tracker": "https://github.com/Conexo-Casa/govee-thermometer-ha/issues",
+  "requirements": [],
+  "version": "1.0.0"
 }
