@@ -122,10 +122,18 @@ class GoveeApi:
 
             if instance == CAP_ONLINE:
                 reading.online = bool(value)
-            elif instance == CAP_TEMPERATURE and value is not None:
-                reading.temperature = _normalise(float(value))
-            elif instance == CAP_HUMIDITY and value is not None:
-                reading.humidity = _normalise(float(value))
+                
+            elif instance == CAP_TEMPERATURE:
+                try:
+                    reading.temperature = _normalise(float(value))
+                except (TypeError, ValueError):
+                    pass
+            
+            elif instance == CAP_HUMIDITY:
+                try:
+                    reading.humidity = _normalise(float(value))
+                except (TypeError, ValueError):
+                    pass
 
         return reading
 
