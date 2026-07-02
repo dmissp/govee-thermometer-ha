@@ -37,8 +37,5 @@ SCALE_DIVISOR   = 100
 # Config-entry / options keys
 CONF_API_KEY   = "api_key"
 
-# Setting the temperature unit as an option rather than a constant 
-DEFAULT_TEMP_UNIT = UnitOfTemperature.FAHRENHEIT
-
 # Polling
 SCAN_INTERVAL_SECONDS = 60   # safe for Govee's cloud rate limit
