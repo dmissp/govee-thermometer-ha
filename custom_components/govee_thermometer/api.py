@@ -115,9 +115,9 @@ class GoveeApi:
         data = await self._post(GOVEE_API_STATE, body)
         caps: list[dict] = data.get("payload", {}).get("capabilities", [])
 
-import json
+        import json
 
-_LOGGER.warning("Capabilities:\n%s", json.dumps(caps, indent=2))
+        _LOGGER.warning("Capabilities:\n%s", json.dumps(caps, indent=2))
         
         reading = GoveeReading()
         for cap in caps:
