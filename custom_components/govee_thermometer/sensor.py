@@ -57,7 +57,7 @@ class _GoveeBase(CoordinatorEntity[GoveeCoordinator], SensorEntity):
 class GoveeTempSensor(_GoveeBase):
     _attr_device_class                 = SensorDeviceClass.TEMPERATURE
     _attr_state_class                  = SensorStateClass.MEASUREMENT
-    _attr_native_unit_of_measurement   = UnitOfTemperature.CELSIUS
+    _attr_native_unit_of_measurement   = UnitOfTemperature.FAHRENHEIT
     _attr_suggested_display_precision  = 1
 
     def __init__(self, coordinator: GoveeCoordinator) -> None:
